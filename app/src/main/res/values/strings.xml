@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Demo2</string>
+    <string name="_00_00_00">00:00:00</string>
+    <string name="mins">mins</string>
+    <string name="_45">45</string>
+    <string name="title_activity_wake_user">WakeUserActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="time_up">Time\'s Up!</string>
+    <string name="ok">OK</string>
+    <string name="channel_name">channel name</string>
+    <string name="channel_description">channel description</string>
+    <string name="today">Today</string>
+    <string name="_10_11_2021">10/11/2021</string>
+    <string name="focused_days">Focused Days</string>
+
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+</resources>

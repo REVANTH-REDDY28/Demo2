@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectTimerActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SelectTimerActivity">
+
+        <RelativeLayout
+            android:layout_width="411dp"
+            android:layout_height="262dp"
+            android:layout_marginTop="140dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView_setTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingEnd="20dp"
+                android:text="@string/_45"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_setTime"
+                android:layout_centerHorizontal="true"
+                android:paddingEnd="20dp"
+                android:text="@string/mins"
+                android:textSize="25sp" />
+
+            <ImageButton
+                android:id="@+id/btn_plus_15"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_above="@+id/btn_plus_1"
+                android:layout_toEndOf="@+id/textView_setTime"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+                app:tint="@color/image_btn_color" />
+
+            <ImageButton
+                android:id="@+id/btn_plus_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textView_setTime"
+                android:src="@drawable/ic_baseline_exposure_plus_1_24"
+                app:tint="@color/image_btn_color" />
+
+            <ImageButton
+                android:id="@+id/btn_minus_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_plus_1"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textView_setTime"
+                android:src="@drawable/ic_baseline_exposure_neg_1_24"
+                app:tint="@color/image_btn_color" />
+
+            <ImageButton
+
+                android:id="@+id/btn_minus_15"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/btn_minus_1"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textView_setTime"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                app:tint="@color/image_btn_color" />
+
+            <ImageButton
+                android:id="@+id/btn_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_baseline_play_arrow_24" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/today"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_todayDate"
+            android:layout_width="134dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/_10_11_2021"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_today" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
